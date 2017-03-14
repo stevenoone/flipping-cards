@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+<title>
+
+</title>
+
+
+<style>
+body {
+    padding: 50px;
+}
+.container2 {
+  width: 100%;
+  height: 353px;
+  position: relative;
+  margin: 0 auto 30px;
+  -webkit-perspective: 800px;
+     -moz-perspective: 800px;
+       -o-perspective: 800px;
+          perspective: 800px;
+   background-color: #f5f5f5;
+}
+
+
+.flipcard {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: -webkit-transform .5s;
+     -moz-transition: -moz-transform .5s;
+       -o-transition: -o-transform .5s;
+          transition: transform .5s;
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+       -o-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+
+}
+
+.flipcard.flipped {
+  -webkit-transform: rotateY( 180deg );
+     -moz-transform: rotateY( 180deg );
+       -o-transform: rotateY( 180deg );
+          transform: rotateY( 180deg );
+
+}
+
+.flipcard div {
+  display: block;
+  height: 353px;
+  width: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+       -o-backface-visibility: hidden;
+          backface-visibility: hidden;
+          -webkit-transform:translate3d(0,0,0);
+}
+
+
+.flipcard .back {
+    -webkit-transform:translate3d(0,0,0);
+  background: #e4f5e4;
+  -webkit-transform: rotateY( 180deg );
+     -moz-transform: rotateY( 180deg );
+       -o-transform: rotateY( 180deg );
+          transform: rotateY( 180deg );
+}
+
+.front .result.tile {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding-top: 40%;
+}
+
+
+.flipcard .back .result .thumb {
+    background-color: #fff;
+    opacity: 0;
+    -webkit-transform:translate3d(0,0,0);
+}
+
+.flipcard .back .result .title a{
+    color: #109010;
+    -webkit-transform:translate3d(0,0,0);
+}
+
+.back .glyphicon-ok {
+    font-size: 180px;
+    display: block;
+    opacity: .3;
+    color: #109010;
+    margin: 22% auto;
+    text-align: center;
+}
+
+.back .btn-link {
+    position: absolute;
+    top: 1px;
+    right: -2px;
+    color: #666;
+    opacity: .6;        
+}
+
+.back .removelink:focus, .back .removelink:focus{
+    outline: none;
+}
+
+.back .removelink:hover {
+        opacity: 1;
+        text-decoration: none;       
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   .flipcard.flipped {
+        transform: rotateY( 0deg );
+   }
+   .flipcard.flipped .back {
+        transform: rotateY( 0deg );
+   }
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <section class="container2">
+                <div class="flipcard">
+                  <div class="front">
+                        <div class="result tile">
+                            <button type="button" class="btn btn-success">Flip me over</button>
+                        </div>
+                  </div>
+                  <div class="back">
+                        <div class="result tile">
+                            <span class="glyphicon glyphicon-ok"></span>
+                            <button type="button" class="btn btn-link"><span class="glyphicon glyphicon-remove"></span> Flip me back</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+       <div class="col-md-4 col-sm-6 col-xs-12">
+            <section class="container2">
+                <div class="flipcard">
+                  <div class="front">
+                        <div class="result tile">
+                            <button type="button" class="btn btn-success">Flip me over</button>
+                        </div>
+                  </div>
+                  <div class="back">
+                        <div class="result tile">
+                            <span class="glyphicon glyphicon-ok"></span>
+                            <button type="button" class="btn btn-link"><span class="glyphicon glyphicon-remove"></span> Flip me back</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <section class="container2">
+                <div class="flipcard">
+                  <div class="front">
+                        <div class="result tile">
+                            <button type="button" class="btn btn-success">Flip me over</button>
+                        </div>
+                  </div>
+                  <div class="back">
+                        <div class="result tile">
+                            <span class="glyphicon glyphicon-ok"></span>
+                            <button type="button" class="btn btn-link"><span class="glyphicon glyphicon-remove"></span> Flip me back</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <section class="container2">
+                <div class="flipcard">
+                  <div class="front">
+                        <div class="result tile">
+                            <button type="button" class="btn btn-success">Flip me over</button>
+                        </div>
+                  </div>
+                  <div class="back">
+                        <div class="result tile">
+                            <span class="glyphicon glyphicon-ok"></span>
+                            <button type="button" class="btn btn-link"><span class="glyphicon glyphicon-remove"></span> Flip me back</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <section class="container2">
+                <div class="flipcard">
+                  <div class="front">
+                        <div class="result tile">
+                            <button type="button" class="btn btn-success">Flip me over</button>
+                        </div>
+                  </div>
+                  <div class="back">
+                        <div class="result tile">
+                            <span class="glyphicon glyphicon-ok"></span>
+                            <button type="button" class="btn btn-link"><span class="glyphicon glyphicon-remove"></span> Flip me back</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <section class="container2">
+                <div class="flipcard">
+                  <div class="front">
+                        <div class="result tile">
+                            <button type="button" class="btn btn-success">Flip me over</button>
+                        </div>
+                  </div>
+                  <div class="back">
+                        <div class="result tile">
+                            <span class="glyphicon glyphicon-ok"></span>
+                            <button type="button" class="btn btn-link"><span class="glyphicon glyphicon-remove"></span> Flip me back</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+<!-- end page content -->
+
+
+    
+
+
+    
+<script src="http://code.jquery.com/jquery-1.11.0.js"> </script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"> </script>
+
+
+
+  
+<!-- begin page scripts -->
+
+<script type="text/javascript">
+ 
+$( document ).ready(function() {
+    $( ".front" ).click(function( event ) {
+        $(this).parent().addClass("flipped");
+    });
+    $( ".back" ).click(function( event ) {
+        $(this).parent().removeClass("flipped");
+    });
+});
+
+
+</script>
+
+<!-- end page scripts -->
+    </body>
+</html>
